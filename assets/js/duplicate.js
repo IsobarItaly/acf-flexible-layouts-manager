@@ -45,6 +45,11 @@ jQuery(document).ready(function($) {
                 //Position of the layout in the template. With the previous exemple : 3 or 5ac483673c181
                 var position    = nameLayout.substr($start, $end - $start);
                 
+                //Temporary fix ACF update < 5.8.1 
+                if(position.indexOf("row-") === 0){
+                    position = position.substr(4);
+                }
+
                 //Fix to check if it's a new layout. More than 4 number the field is new
                 if (position.length > 4) {
                     alert(tradObject.problemDuplication);

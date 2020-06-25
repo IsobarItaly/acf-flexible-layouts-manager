@@ -11,7 +11,7 @@ function acf_flm_update_template_with_pasted_layout(){
 
     remove_filter('acf_the_content', 'do_shortcode', 11);
     
-    if(!$data_actuel = get_field($flexible, $post_id))
+    if(!$data_actuel = get_field($flexible, $post_id, false))
         $data_actuel = false;
 
     $layouts = $_POST['paste-code'];

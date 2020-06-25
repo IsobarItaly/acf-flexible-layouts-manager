@@ -4,7 +4,7 @@ Plugin Name: ACF Flexible Layouts Manager
 Description: Add "Copy", "Duplicate", "Import" & "Paste" options for layout in ACF Flexible Content
 Author: Valentin PELLEGRIN
 Text Domain: acf-flexible-layouts-manager
-Version: 1.1.3
+Version: 1.1.6
 Author URI: https://github.com/valentin-pellegrin
 Licence: GPLv2
 */

@@ -3,8 +3,8 @@ Contributors: valentinpellegrin, damchtlv, hwk-fr
 Donate link: 
 Tags: ACF, flexible content, duplicate, advanced custom fields, import, export, duplicate flexible layout, import flexible layout, ACF flexible layouts manager
 Requires at least: 4.0
-Tested up to: 4.9
-Stable tag: 1.1.3
+Tested up to: 5.2.2
+Stable tag: 1.1.6
 Requires PHP: 5.4
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -12,6 +12,13 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Add "Copy", "Duplicate", "Import" & "Paste" options for layout in ACF Flexible Content.
 
 == Description ==
+
+#### UPDATE
+*I don't really have time to work actively on this plugin anymore. I'm sorry for the delay on bug fixes.
+My friend and mentor @hwk work on the plugin [ACF Extended](https://wordpress.org/plugins/acf-extended/) this plugin is awesome! 
+ACFE integrate all features of AFLM and so more! Test this plugin and folow [@hwk on twitter](https://twitter.com/hwkfr) to be aware from all update comming.*
+
+### ACF Flexible Layout Manager description:
 
 This WordPress plugin allows you to easily **manage your layouts** in the **Advanced Custom Fields "Flexible Content"**.
 
@@ -87,6 +94,13 @@ You can submit an issue to report the bug if you think it may help others.
 6. Import layout modal second step "Select Layout"
 
 == Changelog ==
+
+= 1.1.6 =
+* Fix bug to duplicate layout on the new ACF version
+
+= 1.1.4 =
+* Fix bug with '$format_value' on 'get_field'
+* Fix bug to copy layout on the new ACF version
 
 = 1.1.3 =
 * Fix bug with field WYSIWYG and filter 'acf_the_content'

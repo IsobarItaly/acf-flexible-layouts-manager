@@ -11,7 +11,7 @@ function acf_flm_get_all_layout_templates(){
 
     remove_filter('acf_the_content', 'do_shortcode', 11);
     
-    if(!$data = get_field($flexible, $post_id))
+    if(!$data = get_field($flexible, $post_id, false))
         wp_send_json_error();
 
     wp_send_json_success($data);

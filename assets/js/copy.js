@@ -36,6 +36,11 @@ jQuery(document).ready(function($){
                         //Position of the layout in the template. With the previous exemple : 3 or 5ac483673c181
                         var position    = name.substr($start, $end - $start);
 
+                        //Temporary fix ACF update < 5.8.1 
+                        if(position.indexOf("row-") === 0){
+                            position = position.substr(4);
+                        }
+
                         //Create input invisible to store JSON and allow auto copy for one layout
                         var input = document.createElement("input");
                         input.setAttribute("type", "text");

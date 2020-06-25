@@ -11,10 +11,10 @@ function acf_flm_update_with_custom_layout_selected(){
 
     remove_filter('acf_the_content', 'do_shortcode', 11);
 
-    if(!$data_actuel = get_field($flexible, $post_id_current))
+    if(!$data_actuel = get_field($flexible, $post_id_current, false))
         $data_actuel = false;
 
-    if(!$data_cible = get_field($flexible, $post_id_cible))
+    if(!$data_cible = get_field($flexible, $post_id_cible, false))
         wp_send_json_error();
 
     $data = array();
@@ -51,7 +51,7 @@ function acf_flm_get_all_posts_how_contains_current_flexible(){
 
     $posts = get_posts(array(
         "posts_per_page" => -1,
-        "post_type" => 'bpmLayouts',
+        "post_type" => 'any',
         "fields"    => 'ids',
         /*"post__not_in" => array(get_the_ID()),*/
         'meta_query' => array(

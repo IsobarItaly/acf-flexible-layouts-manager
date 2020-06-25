@@ -13,7 +13,7 @@ function acf_flm_layout_duplicate(){
 
     remove_filter('acf_the_content', 'do_shortcode', 11);
     
-    if(!$data = get_field($flexible, $post_id))
+    if(!$data = get_field($flexible, $post_id, false))
         wp_send_json_error();
 
     $data[] = $data[$position];

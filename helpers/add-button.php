@@ -61,9 +61,9 @@ function acf_flm_add_button_section($label, $field){
         return $label;
     
     //Check if the field is a clone or not
-/*     if( (isset($field['_clone'])) && (!empty($field['_clone'])) )
+    if( (isset($field['_clone'])) && (!empty($field['_clone'])) )
         return $label;
- */
+
     //Get the template page
     $target = acf_flm_get_template_type();
 
